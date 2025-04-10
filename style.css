@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4f6d7a;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    background-color: #c0d6df;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .amount p,
+  .from p,
+  .to p {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  form input {
+    height: 3rem;
+    padding-left: 0.75rem;
+    font-size: 1.2rem;
+    border: 1px solid #166088;
+    border-radius: 0.75rem;
+    width: 100%;
+  }
+  
+  .dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .select-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #166088;
+    border-radius: 0.75rem;
+    background-color: white;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 10rem;
+  }
+  
+  .select-container img {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .dropdown i {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .msg {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+  }
+  
+  button {
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #34537a;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 600px) {
+    .dropdown {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .select-container {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .dropdown i {
+      transform: rotate(90deg);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .msg {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 0.5rem;
+    animation: fadeIn 0.4s ease-in-out;
+  }
